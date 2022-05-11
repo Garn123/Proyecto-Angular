@@ -1,0 +1,8 @@
+<div class="card-container">
+  <div *ngFor="let card of getChampion" class="card">
+    <div [routerLink]="card._id" class="card__img">
+      <img src="{{ card.img }}" alt="{{ card.name }}" />
+    </div>
+    <div class="card__name">{{ card.name.toUpperCase() }}</div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="details-container" *ngIf="champion">
+  <div class="details__img">
+    <img src="{{ champion.img }}" alt="{{ champion.name }}" />
+  </div>
+  <div class="details__info">
+    <h2>{{ champion.name }}</h2>
+    <p><span>Rol: </span>{{ champion.rol }}</p>
+    <p><span>Posición: </span>{{ champion.position }}</p>
+    <p><span>Alcance: </span>{{ champion.tipoDeAlcance }}</p>
+  </div>
+</div>
